@@ -34,51 +34,70 @@ Tesseract OCR
 macOS (with Homebrew):
 brew install tesseract
 brew install tesseract-lang
+```
 
 ⚙️ Usage
 1. Start Watcher
-python watcher.py
-Monitors data/watch/ for new images
+```bash
+    python watcher.py
+```
+- Monitors data/watch/ for new images
+    
+- Automatically extracts text, generates embeddings, updates the index
 
-Automatically extracts text, generates embeddings, updates the index
-
-2. Add Screenshots
-Place .png, .jpg, .jpeg, or .heic files into data/watch/.
+2. Add Screenshots 
+   Place .png, .jpg, .jpeg, or .heic files into data/watch/.
 
 3. Ask Questions
-python query_console.py
-Interact with the embedded knowledge base
+   ```bash
+   python query_console.py
+   ```
+   Interact with the embedded knowledge base
 
-Natural language interface to search screenshot content
+   Natural language interface to search screenshot content
 
 📌 Example
-$ python query_console.py
-Ask me: What error message did I see yesterday?
-Answer: The system reported "Connection timed out."
+
+```bash
+    $ python query_console.py
+    
+    Ask me: What error message did I see yesterday?
+    Answer: The system reported "Connection timed out."
+```
 ⚠️ Limitations & Future Work
-🔤 Language Support
-❌ Current OCR is optimized for English; multi-language OCR support is limited and may require manual Tesseract language packs.
-🧪 LLMs may not respond accurately in languages other than English depending on the model.
-📷 Image Processing
-🚧 HEIC conversion may crop or distort high-res images; improved conversion pipeline is planned.
-🎯 OCR results vary with font clarity, image quality, and orientation.
 
-🤖 Chatbot Capabilities
-🧠 No memory or history-aware chat; each query is independent.
-🛠 Context truncation may happen if image content is long.
-🔄 Modular Extensibility
-☑️ Watcher and Query systems are modular and can be extended to:
+- 🔤 Language Support
 
-Watch multiple folders
+- ❌ Current OCR is optimized for English; multi-language OCR support is limited and may require manual Tesseract language packs.
 
-Send system notifications on process completion
+- 🧪 LLMs may not respond accurately in languages other than English depending on the model.
 
-Add real-time web or desktop chat interface
+- 📷 Image Processing
 
-Use faster or multilingual models (e.g., Mistral, LLaMA 3)
+- 🚧 HEIC conversion may crop or distort high-res images; improved conversion pipeline is planned.
+
+- 🎯 OCR results vary with font clarity, image quality, and orientation.
+
+- 🤖 Chatbot Capabilities
+
+  - 🧠 No memory or history-aware chat; each query is independent.
+
+  - 🛠 Context truncation may happen if image content is long.
+
+  - 🔄 Modular Extensibility
+
+- ☑️ Watcher and Query systems are modular and can be extended to:
+
+  - Watch multiple folders
+
+- Send system notifications on process completion
+
+- Add real-time web or desktop chat interface
+
+- Use faster or multilingual models (e.g., Mistral, LLaMA 3)
 
 🧑‍💻 Author
-Built by ChatGPT and customized by Riazul Karim Ivan.
+- Built by ChatGPT and customized by Riazul Karim Ivan.
 
 📄 License
-MIT License — use freely, improve boldly.
+- MIT License — use freely, improve boldly.
