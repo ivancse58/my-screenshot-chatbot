@@ -1,0 +1,11 @@
+opencv-python
+pytesseract
+sentence-transformers
+faiss-cpu
+openai
+watchdog
+numpy
+python-dotenv
+huggingface_hub
+pillow
+pillow-heif

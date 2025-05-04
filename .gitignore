@@ -1,0 +1,12 @@
+# Ignore log files
+/logs/system.log
+
+# Ignore all files in data folder
+/data/
+/data/*
+/.idea/*
+/.venv/*
+.idea/.gitignore
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
